@@ -1,0 +1,17 @@
+if __name__ == '__main__':
+    score_list=[]
+    listx=[]
+    for _ in range(int(input())):
+        name = input()
+        score = float(input())
+        score_list.append(score)
+        listx.append([name,score])
+    scoreList=list(set(score_list))
+    scoreList.sort()
+    second_last=scoreList[1]
+    listx.sort()
+    for i in listx:
+        if (i[1]==second_last):
+            print(i[0])
+        
+        
